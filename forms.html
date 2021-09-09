@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        label {
+            display: block;
+        }
+
+        input+span {
+            position: relative;
+        }
+
+        input+span::before {
+            position: absolute;
+            right: -20px;
+            top: 5px;
+        }
+
+
+        input:invalid+span::before {
+            content: '✖';
+            color: red;
+        }
+
+        input:valid+span::before {
+            content: '✓';
+            color: green;
+        }
+
+        input:invalid {
+            border: 1px solid red;
+        }
+
+        input:valid {
+            background-color: green;
+            color: white;
+        }
+
+        label:first-child {
+            background-color: lightblue;
+        }
+    </style>
+
+    <form action="" method="post">
+        <label>Name:
+            <input type="text" name="name" />
+        </label>
+
+
+        <fieldset>
+            <legend>Kontaktuppgifter</legend>
+            <label>Email:
+                <input type="email" name="email" required />
+                <span>resultat</span>
+            </label>
+
+            <label>TPhone:
+                <input type="tel" name="phone" required />
+                <span></span>
+            </label>
+        </fieldset>
+
+        <label>Lösenord:
+            <input type="password" name="password" />
+        </label>
+
+        <div>
+            <label>Äpplen:
+                <input type="radio" name="fruit" value="apple" />
+            </label>
+            <label>Päron:
+                <input type="radio" name="fruit" value="pear" checked />
+            </label>
+
+        </div>
+
+        <div>
+            <label>Tomater:
+                <input type="checkbox" name="tomatoes" checked />
+            </label>
+            <label>Kål:
+                <input type="checkbox" name="cale" value="kål" />
+            </label>
+
+        </div>
+
+
+        <input type="hidden" name="secretfield" value="" />
+
+
+
+        <textarea name="description">
+        </textarea>
+
+        <button type="submit">Skicka</button>
+        <button type="reset">Rensa</button>
+
+    </form>
+
+</body>
+
+</html>

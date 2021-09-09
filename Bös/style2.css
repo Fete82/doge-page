@@ -1,0 +1,25 @@
+* {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+section {
+    display: block;
+    width: 600px;
+    background-color: rgb(236, 236, 236);
+
+}
+
+p {
+    width: 75%;
+    height: 25%;
+    margin: 30px;
+    padding: 20px;
+}
+
+.text {
+    margin: auto;
+    width: 80%;
+    border: 2px solid #4c99ff;
+    padding: 10px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: #eee;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 100vh;
+            width: 100vh;
+        }
+
+        .container>div {
+            background-color: rgb(119, 119, 119);
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            flex-grow: 1;
+        }
+
+        .container>div:nth-child(2) {
+            height: 200px;
+            line-height: 50px;
+            flex-shrink: 0;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div>I was recently on a tour of Latin America, and the only regret I have was that I didn't study Latin harder in school so I could converse with those people.</div>
+        <div>One word sums up probably the responsibility of any vice president, and that one word is 'to be prepared'.</div>
+        <div>A low voter turnout is an indication of fewer people going to the polls.</div>
+        <div>Quite frankly, teachers are the only profession that teach our children.</div>
+    </section>
+</body>
+</html>
