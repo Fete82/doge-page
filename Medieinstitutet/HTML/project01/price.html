@@ -8,21 +8,37 @@
     <meta name="author" content="Probably the worst webpage in the world!">
     <link rel="icon" href="./images/doge.png">
     <title>Project Dogecoin</title>
+    <script type="text/javascript" src="https://www.bullionvault.com/banners/live_price_widget.js"></script>
 </head>
 <body>
     <div id="content">
         <section>
         <h1 id="h1">Đogecoin</h1>
-            <div id="quote">
+        
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="price.html">Price</a>
+            <a href="news.html">News</a>
+        </div>
+        <h2>Live price chart</h2>
 
-                <div class="navigation">
-                    <a href="index.html">Home</a>
-                    <a href="price.html">Price</a>
-                    <a href="news.html">News</a>
-                </div>
-                <p>There is obviously no copyright.</p>
-            </div>
-        </section>
+        <div id="banner1"></div>
+        
+        <p>Much price. Such wow.</p>
+
+        <script type="text/javascript">
+            var options = {
+                referrerID: "JOHNSMITH101",
+                size: "728x90",
+                bullion: "gold",
+                currency: "USD",
+                weightUnit: "TOZ"
+            };
+            new BullionVaultPriceWidget('banner1', options);
+        </script>
+
+
+
     <div class="footer">
         <footer>
             <div id="validcss">
@@ -31,13 +47,11 @@
                         src="http://jigsaw.w3.org/css-validator/images/vcss"
                         alt="Valid CSS!" /></a>
             </div> 
-            <div id="nav">
+            <div class="nav">
                 <a href="mailto:fete.edvin@gmail.com">fete.edvin@gmail.com</a>
                 <a href="copyright.html">&copy Copyright 2021 Project Dogecoin</a>
-                <a href="contact.html">Contact</a>
-                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>  
             </div>
-            
         </footer>
     </div>
 </body>

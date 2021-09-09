@@ -1,7 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    overflow-y: scroll;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     background-image: linear-gradient(rgb(46, 60, 255), rgb(133, 166, 255));
+    min-height: 90vh;
 }
 
 
@@ -39,6 +45,18 @@ img {
     width: 20%;
 }
 
+.chart {
+
+}
+.navigation {
+    padding: 2px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: #bebebe;
+    border-radius: 3px;
+
+}
 
 
 .dogeimg {
@@ -56,13 +74,28 @@ img {
     text-shadow: 3px 3px #696969;
 }
 
+#p-center {
+    text-align: center;
+}
 
 p {
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
     text-align: justify;
-    margin: 10px;
+    margin: 15px;
     padding: 1em;
 }
 
+h2 {
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
 
 h1 {
     text-align: center;
@@ -88,6 +121,8 @@ footer {
 }
 
 #validcss {
+    margin: 20px;
+    opacity: 90%;
 
 }
 
@@ -98,6 +133,7 @@ footer {
 }
 
 .nav {
+
     color: rgb(255, 255, 255);
 }
 
@@ -108,6 +144,8 @@ footer {
 
 
 a {
+    margin-left: 10px;
+    margin-right: 10px;
     font-family: sans-serif;
     color: white;
     text-decoration: none;
@@ -117,4 +155,14 @@ a {
 a:hover {
     color:rgb(37, 37, 37);
 
+}
+
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

@@ -38,7 +38,7 @@
           color: black;
         }
         
-        .container {
+        .container {;
           border-radius: 5px;
           background-color: #ffffff;
           padding: 30px;
@@ -49,8 +49,15 @@
     <div id="content">
         <section>
         <h1 id="h1">Đogecoin</h1>
-            <p>Feel free to send preferably dogecoin-related comments!</p>
+            
         </section>
+
+        <div class="navigation">
+          <a href="index.html">Home</a>
+          <a href="price.html">Price</a>
+          <a href="news.html">News</a>
+      </div>
+      <p>Feel free to send preferably dogecoin-related comments!</p>
 
         <div class="container">
             <form action="/action_page.php">
@@ -66,7 +73,7 @@
                 <option value="australia">Dogeland</option>
               </select>
               <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Be nice, this is my first webpage..." style="height:200px"></textarea>
+              <textarea id="subject" name="subject" placeholder="Type message here.." style="height:200px"></textarea>
           
               <input type="submit" value="Submit">
             </form>
@@ -83,10 +90,11 @@
                         src="http://jigsaw.w3.org/css-validator/images/vcss"
                         alt="Valid CSS!" /></a>
             </div> 
-            <div id="nav">
+            <div class="nav">
                 <a href="mailto:fete.edvin@gmail.com">fete.edvin@gmail.com</a>
                 <a href="copyright.html">&copy Copyright 2021 Project Dogecoin</a>
                 <a href="index.html">Home</a>
+                <a href="#top">Top↑</a>
             </div>
             
         </footer>
