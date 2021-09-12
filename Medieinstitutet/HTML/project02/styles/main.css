@@ -1,0 +1,80 @@
+body {
+    background-color: aliceblue;
+}
+
+/* This is the banner and navigation section */
+.banner {
+    /*space between? not sure */
+    justify-content: space-between;
+    display: flex;
+    background-color: dodgerblue;
+}
+
+.banner > div {
+    max-height: 100px;
+    background-color: #f1f1f1;
+    width: 500px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 25px;
+    ;
+}
+
+
+/*does not work, overwritten? */
+.logotype {
+    max-width: 150px;
+
+}
+
+
+
+
+
+/* This is the main section */
+.main {
+    justify-content: left;
+    display: flex;
+    background-color: rgb(13, 48, 241);
+}
+
+.main > div {
+    flex-direction: row;
+    background-color: #f1f1f1;
+    width: 600px;
+    height: 80vh;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 15px;
+    ;
+}
+
+.sidebar {
+    max-width: 250px;
+}
+
+.horizontal {
+    max-width: 100px;
+}
+
+
+
+
+/* This is the footer */
+.footbar {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(7, 33, 59);
+}
+
+.footbar > div {
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 35px;
+    ;
+}
