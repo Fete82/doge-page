@@ -124,7 +124,6 @@ a:hover {
 }
 
 
-
 /* articles will fill out the entire screen when scaled down heavily */
 @media screen and (max-width: 640px) {
     .articles {
@@ -142,7 +141,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
 }
