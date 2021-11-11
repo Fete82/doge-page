@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form name="myForm">
+            <label for="xxx">Min Inköpslista</label>
+            <br>
+            <input type="text" name="fname" id="fname" value=""/>
+            <br>
+            <button id="buttonSubmit" type="button">Lägg till!</button>
+        </form>
+        <div>
+            <ol id="lista">
+            </ol>
+        </div>
+        <script>
+
+            let btn = document.querySelector('#buttonSubmit');
+            let myList = document.getElementById('lista');
+            let btn2 = document.createElement("button");
+
+            document.getElementById("buttonSubmit").addEventListener("click", function() {
+
+                let inputValue = document.getElementById("fname").value;
+
+                console.log(inputValue);
+
+                let entry = document.createElement('li');
+
+                
+                entry.appendChild(document.createTextNode(inputValue));
+                myList.appendChild(entry);
+                myList.appendChild(btn2);
+
+                document.myForm.reset();
+                //reset input field
+            });
+
+        </script>
+    </main>
+</body>
+</html>
